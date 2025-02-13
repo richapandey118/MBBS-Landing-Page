@@ -1,0 +1,219 @@
+/* Elegant light theme with centered layout */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    color: #2c3e50;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered container for all content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stunning hero section */
+.study {
+    background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(240, 244, 248, 0.95)),
+                url('https://source.unsplash.com/1600x900/?education,university');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.study h1 {
+    font-size: 3.5rem;
+    color: #3498db;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered contact form with modern design */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.cta-form {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(52, 152, 219, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.cta-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    background: #f8fafc;
+    border: 2px solid #e6e9ec;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.cta-form input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.15);
+    outline: none;
+}
+
+/* Stylish buttons */
+.cta-form button, .study button {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-form button:hover, .study button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+}
+
+/* Modern grid layout for countries */
+.countries {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.countries ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.countries li {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.countries li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(52, 152, 219, 0.15);
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .study h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cta-form {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .countries ul {
+        grid-template-columns: 1fr;
+    }
+}
+/* Center all sections */
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center benefits section */
+.benefits {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Center countries list */
+.countries {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.countries ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Center admission section */
+.admission {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Center form section */
+.cta-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
